@@ -1,6 +1,7 @@
 package Atividadepratica5;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Ex1 {
@@ -12,32 +13,32 @@ public class Ex1 {
 		int op;
 
 		do {
-		System.out.println("\n(1)Para adicionar uma cor");
-		System.out.println("\n(0)Para finalizar.");
-		op = read.nextInt();
+			System.out.println("\n(1)Para adicionar uma cor");
+			System.out.println("\n(0)Para finalizar.");
+			op = read.nextInt();
 
-		switch (op) {
-		case 1:
-			System.out.println("\nEscreva a cor desejada ");
-			do {
-				cor = read.nextLine();
-				if (!cor.equals("Sair")) {
-					mylist.add(cor);
-				}
-			} while (!cor.equals("Sair"));
-			break;
-		case 0:
-			System.out.println("\nAs cores são ");
-			System.out.println(mylist);
-			break;
+			switch (op) {
+			case 1:
+				System.out.println("\nEscreva a cor desejada ");
+				do {
+					cor = read.nextLine();
+					if (!cor.equals("Sair")) {
+						mylist.add(cor);
+					}
+				} while (!cor.equals("Sair"));
+				break;
+			case 0:
+				mylist.sort(null);
+				System.out.println("\nAs cores são ");
+				System.out.println(mylist);
+				break;
 
-		default:
-			System.out.println("\nOpção inválida...Digite novamente");
+			default:
+				System.out.println("\nOpção inválida...Digite novamente");
+			}
 		}
-		}
 
-		while (op != 0)
-			;
+		while (op != 0);
 
 	}
 
