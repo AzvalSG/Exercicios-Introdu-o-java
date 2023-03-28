@@ -1,10 +1,11 @@
 package ExPOO2;
 
-public class Console {
+public class Console extends Produto {
 
 	public String nome, dev, ano;
 
-	public Console(String nome, String dev, String ano) {
+	public Console(String nome, String dev, String ano,String id, int preco) {
+		super(id,preco);
 		this.nome = nome;
 		this.ano = ano;
 		this.dev = dev;
