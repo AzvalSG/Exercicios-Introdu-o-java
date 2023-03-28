@@ -8,9 +8,9 @@ public class TestaJogo {
 
 		Scanner leia = new Scanner(System.in);
 
-		Jogo TheWitcher = new Jogo("The Witcher 3", "CD Projekt Read", "RPG");
-		Jogo CSGO = new Jogo("Counter-Strike: Global Offensive", "Valve", "FPS");
-		Console Xbox = new Console("Xbox", "Microsoft", "Sem Nome");
+		Produto TheWitcher = new Jogo("The Witcher 3", "CD Projekt Red", "RPG","01", 25);
+		Produto CSGO = new Jogo("Counter-Strike: Global Offensive", "Valve", "FPS","02", 79);
+		Produto Xbox = new Console("Xbox", "Microsoft", "Sem Nome","01",300);
 
 		System.out.println(TheWitcher);
 		System.out.println(CSGO);
